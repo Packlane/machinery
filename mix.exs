@@ -4,7 +4,7 @@ defmodule Machinery.Mixfile do
   def project do
     [
       app: :machinery,
-      version: "0.16.0",
+      version: "0.13.0",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
       deps: deps(),
@@ -35,8 +35,9 @@ defmodule Machinery.Mixfile do
       {:phoenix_html, "~> 2.9"},
       {:cowboy, "~> 1.0"},
       {:excoveralls, "~> 0.7", only: :test},
-      {:ecto, "~> 3.0"},
-      {:ex_doc, "~> 0.18", only: :dev, runtime: false}
+      {:ecto, "~> 2.1"},
+      {:ex_doc, "~> 0.18", only: :dev, runtime: false},
+      {:basic_auth, "~> 2.1.4"}
     ]
   end
 
