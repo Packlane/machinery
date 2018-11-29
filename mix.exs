@@ -36,7 +36,8 @@ defmodule Machinery.Mixfile do
       {:cowboy, "~> 1.0"},
       {:excoveralls, "~> 0.7", only: :test},
       {:ecto, "~> 2.1"},
-      {:ex_doc, "~> 0.18", only: :dev, runtime: false}
+      {:ex_doc, "~> 0.18", only: :dev, runtime: false},
+      {:basic_auth, "~> 2.1.4"}
     ]
   end
 
